@@ -1,0 +1,3 @@
+| 名前 | 名前カタカナ | 性別 | メールアドレス | 住所 | 住所カタカナ |
+| --- | --- | :---: | --- | --- | --- |{{ range . }}
+| {{ .Gimei.FullName.Name }} | {{ (.Gimei.FullNameWithSep " ").Katakana }} | {{ .Gimei.Gender }} | {{ .Gimei.Email }} | {{ .Address.FullName.Name }} | {{ (.Address.FullNameWithSep " ").Katakana }} |{{ end }}

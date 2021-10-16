@@ -1,0 +1,3 @@
+| 名前 | カタカナ | 性別 | メールアドレス |
+| --- | --- | :---: | --- |{{ range . }}
+| {{ .FullName.Name }} | {{ (.FullNameWithSep " ").Katakana }} | {{ .Gender }} | {{ .Email }} |{{ end }}
