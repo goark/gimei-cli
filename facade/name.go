@@ -17,8 +17,8 @@ func newNameCmd(ui *rwi.RWI) *cobra.Command {
 	nameCmd := &cobra.Command{
 		Use:     "gimei",
 		Aliases: []string{"name", "g", "n"},
-		Short:   "偽名の生成",
-		Long:    "偽名の生成",
+		Short:   "姓名の生成",
+		Long:    "姓名の生成",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			// options
 			jsonFlag, err := cmd.Flags().GetBool("json")
@@ -81,7 +81,7 @@ func newNameCmd(ui *rwi.RWI) *cobra.Command {
 	}
 	nameCmd.Flags().BoolP("json", "j", false, "JSON形式で表示")
 	nameCmd.Flags().BoolP("gender", "g", false, "「その他」の性別を含める")
-	nameCmd.Flags().BoolP("unique", "u", false, "名前の重複を避ける")
+	nameCmd.Flags().BoolP("unique", "u", false, "姓名の重複を避ける")
 	nameCmd.Flags().BoolP("crypt-rand", "", false, "crypt/rand 乱数生成器を使う")
 	nameCmd.Flags().IntP("repeat", "r", 1, "試行回数")
 	nameCmd.Flags().StringP("template-path", "t", "", "テンプレートファイルへのパス")

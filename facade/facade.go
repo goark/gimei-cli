@@ -29,8 +29,8 @@ var (
 func newRootCmd(ui *rwi.RWI, args []string) *cobra.Command {
 	rootCmd := &cobra.Command{
 		Use:   Name,
-		Short: "偽名・住所データ生成ツール",
-		Long:  "偽名・住所データ生成ツール",
+		Short: "姓名・住所データ生成ツール",
+		Long:  "姓名・住所データ生成ツール",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			// options
 			jsonFlag, err := cmd.Flags().GetBool("json")
@@ -110,7 +110,7 @@ func newRootCmd(ui *rwi.RWI, args []string) *cobra.Command {
 
 	//options
 	rootCmd.Flags().BoolP("json", "j", false, "JSON形式で表示")
-	rootCmd.Flags().BoolP("unique", "u", false, "住所名の重複を避ける")
+	rootCmd.Flags().BoolP("unique", "u", false, "姓名＋住所名の重複を避ける")
 	rootCmd.Flags().StringP("name", "n", "", "絞り込み市区町村名（一部でも可）")
 	rootCmd.Flags().BoolP("gender", "g", false, "「その他」の性別を含める")
 	rootCmd.Flags().BoolP("crypt-rand", "", false, "crypt/rand 乱数生成器を使う")
