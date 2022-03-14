@@ -3,8 +3,8 @@ package all_test
 import (
 	"fmt"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/all"
-	"github.com/spiegel-im-spiegel/mt/mt19937"
+	"github.com/goark/gimei-cli/all"
+	"github.com/goark/mt/mt19937"
 )
 
 func ExampleNew() {

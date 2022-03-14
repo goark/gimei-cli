@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/pref"
+	"github.com/goark/gimei-cli/pref"
 )
 
 // Generator is context for gimei generator.

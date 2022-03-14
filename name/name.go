@@ -1,8 +1,8 @@
 package name
 
 import (
-	"github.com/spiegel-im-spiegel/kkconv"
-	"github.com/spiegel-im-spiegel/krconv"
+	"github.com/goark/kkconv"
+	"github.com/goark/krconv"
 )
 
 type Name struct {

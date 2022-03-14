@@ -3,7 +3,7 @@ package pref_test
 import (
 	"fmt"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/pref"
+	"github.com/goark/gimei-cli/pref"
 )
 
 func ExamplePrefCode() {

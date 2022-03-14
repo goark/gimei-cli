@@ -8,8 +8,8 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/address"
-	"github.com/spiegel-im-spiegel/gimei-cli/name"
+	"github.com/goark/gimei-cli/address"
+	"github.com/goark/gimei-cli/name"
 	"gopkg.in/yaml.v3"
 )
 
@@ -51,7 +51,7 @@ func loadPlaces(path string) (address.Places, address.Places, address.Places, er
 
 const template1 = `package address
 
-import "github.com/spiegel-im-spiegel/gimei-cli/name"
+import "github.com/goark/gimei-cli/name"
 
 //Places is list of place names
 type Places []*name.Name

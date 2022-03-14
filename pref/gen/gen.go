@@ -11,11 +11,11 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/spiegel-im-spiegel/csvdata"
-	"github.com/spiegel-im-spiegel/csvdata/exceldata"
-	"github.com/spiegel-im-spiegel/errs"
-	"github.com/spiegel-im-spiegel/gimei-cli/name"
-	"github.com/spiegel-im-spiegel/gimei-cli/pref"
+	"github.com/goark/csvdata"
+	"github.com/goark/csvdata/exceldata"
+	"github.com/goark/errs"
+	"github.com/goark/gimei-cli/name"
+	"github.com/goark/gimei-cli/pref"
 )
 
 func importPref(path, sheet string) ([]*pref.Pref, []*pref.City, error) {
@@ -65,7 +65,7 @@ func importPref(path, sheet string) ([]*pref.Pref, []*pref.City, error) {
 
 const template1 = `package pref
 
-import "github.com/spiegel-im-spiegel/gimei-cli/name"
+import "github.com/goark/gimei-cli/name"
 
 var Prefs = map[string]*Pref{
 {{ range . }}	"{{ .Code }}": {Code: "{{ .Code }}", Name: &name.Name{Name: "{{ .Name.Name }}", Katakana: "{{ .Name.Katakana }}", Hiragana: "{{ .Name.Hiragana }}", Roman: "{{ .Name.Roman }}"}},

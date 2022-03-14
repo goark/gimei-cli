@@ -3,10 +3,10 @@ package facade
 import (
 	"encoding/json"
 
+	"github.com/goark/errs"
+	"github.com/goark/gimei-cli/pref"
+	"github.com/goark/gocli/rwi"
 	"github.com/spf13/cobra"
-	"github.com/spiegel-im-spiegel/errs"
-	"github.com/spiegel-im-spiegel/gimei-cli/pref"
-	"github.com/spiegel-im-spiegel/gocli/rwi"
 )
 
 //newPrefCmd returns cobra.Command instance for show sub-command

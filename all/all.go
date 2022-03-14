@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/address"
-	"github.com/spiegel-im-spiegel/gimei-cli/gimei"
+	"github.com/goark/gimei-cli/address"
+	"github.com/goark/gimei-cli/gimei"
 )
 
 // Info is information for Gimei and Address.

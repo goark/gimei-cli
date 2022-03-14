@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/name"
+	"github.com/goark/gimei-cli/name"
 )
 
 // Address is pseudo place name information.

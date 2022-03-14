@@ -8,8 +8,8 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/gimei"
-	"github.com/spiegel-im-spiegel/gimei-cli/name"
+	"github.com/goark/gimei-cli/gimei"
+	"github.com/goark/gimei-cli/name"
 	"gopkg.in/yaml.v3"
 )
 
@@ -51,7 +51,7 @@ func loadNames(path string) (gimei.Names, gimei.Names, gimei.Names, error) {
 
 const template1 = `package gimei
 
-import "github.com/spiegel-im-spiegel/gimei-cli/name"
+import "github.com/goark/gimei-cli/name"
 
 //Names is list of names
 type Names []*name.Name

@@ -3,7 +3,7 @@ package name_test
 import (
 	"fmt"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/name"
+	"github.com/goark/gimei-cli/name"
 )
 
 func ExampleNew() {

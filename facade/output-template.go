@@ -4,7 +4,7 @@ import (
 	"io"
 	"text/template"
 
-	"github.com/spiegel-im-spiegel/errs"
+	"github.com/goark/errs"
 )
 
 func outputWithTemplate(w io.Writer, tmplPath string, value interface{}) error {

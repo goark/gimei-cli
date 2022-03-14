@@ -1,6 +1,6 @@
 package pref
 
-import "github.com/spiegel-im-spiegel/gimei-cli/name"
+import "github.com/goark/gimei-cli/name"
 
 var Prefs = map[string]*Pref{
 	"01": {Code: "01", Name: &name.Name{Name: "北海道", Katakana: "ホッカイドウ", Hiragana: "ほっかいどう", Roman: "hokkaidou"}},
