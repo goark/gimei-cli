@@ -1,6 +1,6 @@
 package address
 
-import "github.com/spiegel-im-spiegel/gimei-cli/name"
+import "github.com/goark/gimei-cli/name"
 
 //Places is list of place names
 type Places []*name.Name

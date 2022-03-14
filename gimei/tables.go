@@ -1,6 +1,6 @@
 package gimei
 
-import "github.com/spiegel-im-spiegel/gimei-cli/name"
+import "github.com/goark/gimei-cli/name"
 
 //Names is list of names
 type Names []*name.Name

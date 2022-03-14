@@ -1,21 +1,23 @@
 # [gimei-cli] -- 姓名・住所データ生成ツール
 
-[![check vulns](https://github.com/spiegel-im-spiegel/gimei-cli/workflows/vulns/badge.svg)](https://github.com/spiegel-im-spiegel/gimei-cli/actions)
-[![lint status](https://github.com/spiegel-im-spiegel/gimei-cli/workflows/lint/badge.svg)](https://github.com/spiegel-im-spiegel/gimei-cli/actions)
-[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/spiegel-im-spiegel/gimei-cli/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/release/spiegel-im-spiegel/gimei-cli.svg)](https://github.com/spiegel-im-spiegel/gimei-cli/releases/latest)
+[![check vulns](https://github.com/goark/gimei-cli/workflows/vulns/badge.svg)](https://github.com/goark/gimei-cli/actions)
+[![lint status](https://github.com/goark/gimei-cli/workflows/lint/badge.svg)](https://github.com/goark/gimei-cli/actions)
+[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/goark/gimei-cli/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/goark/gimei-cli.svg)](https://github.com/goark/gimei-cli/releases/latest)
 
 [willnet/gimei](https://github.com/willnet/gimei "willnet/gimei: random Japanese name and address generator") および [mattn/go-gimei](https://github.com/mattn/go-gimei) からの fork で，コマンドライン上で姓名や住所名のダミーデータを大量に生成することを目標に作成しています。
+
+**Migrated repository to [github.com/goark/gimei-cli][gimei-cli]**
 
 ## ビルド & インストール
 
 ```
-$ go install github.com/spiegel-im-spiegel/gimei-cli@latest
+$ go install github.com/goark/gimei-cli@latest
 ```
 
 ### 実行バイナリ
 
-See [latest release](https://github.com/spiegel-im-spiegel/gimei-cli/releases/latest).
+See [latest release](https://github.com/goark/gimei-cli/releases/latest).
 
 ## 簡単な使い方
 
@@ -470,4 +472,4 @@ $ gimei-cli cities -n 広島市 --json | jq .
 
 [![dependency.png](./dependency.png)](./dependency.png)
 
-[gimei-cli]: https://github.com/spiegel-im-spiegel/gimei-cli "spiegel-im-spiegel/gimei-cli: 姓名・住所データ生成ツール"
+[gimei-cli]: https://github.com/goark/gimei-cli "goark/gimei-cli: 姓名・住所データ生成ツール"

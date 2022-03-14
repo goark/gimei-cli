@@ -6,13 +6,13 @@ import (
 	"math/rand"
 	"runtime"
 
+	"github.com/goark/errs"
+	"github.com/goark/gimei-cli/all"
+	"github.com/goark/gocli/exitcode"
+	"github.com/goark/gocli/rwi"
+	"github.com/goark/mt/mt19937"
+	"github.com/goark/mt/secure"
 	"github.com/spf13/cobra"
-	"github.com/spiegel-im-spiegel/errs"
-	"github.com/spiegel-im-spiegel/gimei-cli/all"
-	"github.com/spiegel-im-spiegel/gocli/exitcode"
-	"github.com/spiegel-im-spiegel/gocli/rwi"
-	"github.com/spiegel-im-spiegel/mt/mt19937"
-	"github.com/spiegel-im-spiegel/mt/secure"
 )
 
 var (

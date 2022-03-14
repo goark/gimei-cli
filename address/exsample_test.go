@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/address"
-	"github.com/spiegel-im-spiegel/mt/mt19937"
+	"github.com/goark/gimei-cli/address"
+	"github.com/goark/mt/mt19937"
 )
 
 func ExampleNewAddress() {

@@ -3,8 +3,8 @@ package all
 import (
 	"math/rand"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/address"
-	"github.com/spiegel-im-spiegel/gimei-cli/gimei"
+	"github.com/goark/gimei-cli/address"
+	"github.com/goark/gimei-cli/gimei"
 )
 
 // Generator is context for gimei and address generator.

@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/spiegel-im-spiegel/gimei-cli/name"
+	"github.com/goark/gimei-cli/name"
 )
 
 // Pref is information of prefecture.

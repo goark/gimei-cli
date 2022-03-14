@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"math/rand"
 
+	"github.com/goark/errs"
+	"github.com/goark/gimei-cli/address"
+	"github.com/goark/gocli/rwi"
+	"github.com/goark/mt/mt19937"
+	"github.com/goark/mt/secure"
 	"github.com/spf13/cobra"
-	"github.com/spiegel-im-spiegel/errs"
-	"github.com/spiegel-im-spiegel/gimei-cli/address"
-	"github.com/spiegel-im-spiegel/gocli/rwi"
-	"github.com/spiegel-im-spiegel/mt/mt19937"
-	"github.com/spiegel-im-spiegel/mt/secure"
 )
 
 //newVersionCmd returns cobra.Command instance for show sub-command
