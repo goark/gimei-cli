@@ -2,10 +2,11 @@ package address_test
 
 import (
 	"fmt"
-	"strings"
 
 	"github.com/goark/gimei-cli/address"
 	"github.com/goark/mt/mt19937"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 )
 
 func ExampleNewAddress() {
@@ -13,7 +14,7 @@ func ExampleNewAddress() {
 	fmt.Println(a.FullName().Name)
 	fmt.Println(a.FullName().Katakana)
 	fmt.Println(a.FullName().Hiragana)
-	fmt.Println(strings.ToTitle(a.FullName().Roman))
+	fmt.Println(cases.Title(language.Und, cases.NoLower).String(a.FullName().Roman))
 	// Output:
 	// 奈良県富士市ダイハツ町
 	// ナラケンフジシダイハツチョウ

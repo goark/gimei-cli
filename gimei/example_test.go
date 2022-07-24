@@ -2,10 +2,11 @@ package gimei_test
 
 import (
 	"fmt"
-	"strings"
 
 	"github.com/goark/gimei-cli/gimei"
 	"github.com/goark/mt/mt19937"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 )
 
 func ExampleNewGimei() {
@@ -14,7 +15,7 @@ func ExampleNewGimei() {
 	fmt.Println(fg.FullName().Name)
 	fmt.Println(fg.FullName().Katakana)
 	fmt.Println(fg.FullName().Hiragana)
-	fmt.Println(strings.ToTitle(fg.FullName().Roman))
+	fmt.Println(cases.Title(language.Und, cases.NoLower).String(fg.FullName().Roman))
 	fmt.Println(fg.Email())
 	// Output:
 	// 菊池 貴志 (キクチ タカシ : 男性)
