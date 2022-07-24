@@ -13,7 +13,7 @@ func ExampleNewAddress() {
 	fmt.Println(a.FullName().Name)
 	fmt.Println(a.FullName().Katakana)
 	fmt.Println(a.FullName().Hiragana)
-	fmt.Println(strings.Title(a.FullName().Roman))
+	fmt.Println(strings.ToTitle(a.FullName().Roman))
 	// Output:
 	// 奈良県富士市ダイハツ町
 	// ナラケンフジシダイハツチョウ

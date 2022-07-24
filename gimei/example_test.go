@@ -14,7 +14,7 @@ func ExampleNewGimei() {
 	fmt.Println(fg.FullName().Name)
 	fmt.Println(fg.FullName().Katakana)
 	fmt.Println(fg.FullName().Hiragana)
-	fmt.Println(strings.Title(fg.FullName().Roman))
+	fmt.Println(strings.ToTitle(fg.FullName().Roman))
 	fmt.Println(fg.Email())
 	// Output:
 	// 菊池 貴志 (キクチ タカシ : 男性)
